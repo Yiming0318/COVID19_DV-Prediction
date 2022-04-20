@@ -1,0 +1,28 @@
+def logistic_function(t, K, P0, r):
+    t0 = 0
+    exp = np.exp(r * (t - t0))
+    return (K * exp * P0) / (K + (exp - 1) * P0)
+
+
+P(t) = KP0e^rt/(K+P0(e^rt-1)
+K => known MAX cases 
+P0 => initial cases
+r => growth rate
+
+
+          K                 P0           r
+CHINA:[8.16248877e+04 1.11762891e+03 2.20343072e-01]
+IRAN: [9.71222683e+04 3.96190004e+01 1.08311810e-01]
+JAPAN:[2.08286170e+04 7.72819951e+00 8.87734377e-02]
+Philippines:[8.95578063e+03 4.25911571e-01 1.22736502e-01]
+SOUTH KOREA:[1.02357612e+04 4.32311614e+00 1.76951532e-01]
+Thailand:[2.87928148e+03 1.52603380e-02 1.76574449e-01]
+UK:[1.88877433e+05 3.44227064e+00 1.27943975e-01]
+
+
+
+def f_3(x, A, B, C, D):  
+    return A*x*x*x + B*x*x + C*x + D
+
+         A           B             C            D
+US:[   2.72398141 -183.09245568 2384.4934822   700.21119776]
